@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+</head>
+<body>
+    <h1>Add Employee Details</h1>
+    <form method="POST" action="/add">
+        <label>Employee ID:</label>
+        <input type="text" name="employee_id" required><br>
+        <label>Employee Name:</label>
+        <input type="text" name="employee_name" required><br>
+        <label>ACF2 ID:</label>
+        <input type="text" name="acf2_id" required><br>
+        <label>TD Mail ID:</label>
+        <input type="email" name="td_mail" required><br>
+        <label>Wipro Mail ID:</label>
+        <input type="email" name="wipro_mail" required><br>
+        <label>Week 1 Hours:</label>
+        <input type="number" name="week1" required><br>
+        <label>Week 2 Hours:</label>
+        <input type="number" name="week2" required><br>
+        <label>Week 3 Hours:</label>
+        <input type="number" name="week3" required><br>
+        <label>Week 4 Hours:</label>
+        <input type="number" name="week4" required><br>
+        <label>Week 5 Hours:</label>
+        <input type="number" name="week5" required><br>
+        <label>Leave Count:</label>
+        <input type="number" name="leave_count" required><br>
+        <label>Leave Details:</label>
+        <textarea name="leave_details"></textarea><br>
+        <label>Comments:</label>
+        <textarea name="comments"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

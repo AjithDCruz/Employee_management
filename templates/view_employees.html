@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Employees</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>ACF2 ID</th>
+                <th>TD Mail</th>
+                <th>Wipro Mail</th>
+                <th>Week 1</th>
+                <th>Week 2</th>
+                <th>Week 3</th>
+                <th>Week 4</th>
+                <th>Week 5</th>
+                <th>Total Hours</th>
+                <th>Leave Count</th>
+                <th>Leave Details</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for employee in employees %}
+            <tr>
+                <td>{{ employee[0] }}</td>
+                <td>{{ employee[1] }}</td>
+                <td>{{ employee[2] }}</td>
+                <td>{{ employee[3] }}</td>
+                <td>{{ employee[4] }}</td>
+                <td>{{ employee[5] }}</td>
+                <td>{{ employee[6] }}</td>
+                <td>{{ employee[7] }}</td>
+                <td>{{ employee[8] }}</td>
+                <td>{{ employee[9] }}</td>
+                <td>{{ employee[10] }}</td>
+                <td>{{ employee[11] }}</td>
+                <td>{{ employee[12] }}</td>
+                <td>{{ employee[13] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
